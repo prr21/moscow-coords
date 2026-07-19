@@ -1,0 +1,42 @@
+:root {
+  --surface-1: #fcfcfb;
+  --surface-2: #f0efec;
+  --page: #f7f6f2;
+  --text-primary: #191813;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --border: rgba(25, 24, 19, 0.1);
+  --ink: #23221c; /* chrome stays achromatic: the 12 okrug hues own all the colour */
+  --font:
+    'Golos Text Variable',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  --shadow-card: 0 1px 2px rgba(25, 24, 19, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}

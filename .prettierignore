@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+
+# Generated boundary data — pretty-printing the coordinate arrays inflates it by
+# ~70% and nobody reads it by hand. See README for how it is regenerated.
+src/assets/*.geojson
